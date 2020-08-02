@@ -1,0 +1,34 @@
+body{
+	background:rgb(2,40,11);
+}
+ .box{
+	width:300px;
+	background: #fff;
+	position: relative;
+	margin: auto;
+	top:200px;
+	height:300px;
+	transition-property: background,border-radius,transform;
+	/*if you don't want to specify all of those properties and setting the the duration for 
+	each it is possible that you may be setting all to the same duration and also on 
+	propeties you may be wanting just to set out to ALL*/
+	transition-property: all;
+	transition-duration:1s,2s;
+	transition-duration: 1sec;
+	so on transitions in the body it is where we set the properties and start to apply on them
+	like down like how we have did on box:hover and the property that we defined in the 
+	body it is what is going to be using like on duration you may see that we have setted transition-duration
+	for 1sec on background and border radius for 2sec.
+	transition-delay: 1s;
+	transition-timing-function: linear;
+
+} 
+.box:hover{
+	background: yellow;
+	border-radius: 50%;
+	transform:rotateY(180deg);
+
+}
+.box:active{
+	background: blue;
+}

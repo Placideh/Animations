@@ -1,0 +1,51 @@
+body{
+	background:rgb(2,40,11);
+}
+.box{
+	width:200px;
+	height: 200px;
+	background:#fff;
+	position: relative;
+	animation-name:anime;
+	animation-duration:4s;
+	/*animation-iteration-count: 2;*/
+	/*animation-iteration-count: infinite; we can 
+	also set it to infinite */
+
+	/* animation-delay: 2s; */
+	/* here we are adding the delay
+	property before its start */
+	/*animation-direction: reverse;*/
+	 /* animation-direction: alternate; this helps to 
+	 go all the two ways from clokwise and again
+	 turn to anti-clockwise */  
+	 /* animation-timing-function: linear; this moves 
+	 on the same speed */
+	 /*animation-timing-function: ease-in; this starts 
+	 slow and increase the speed*/
+	 /* animation-timing-function: ease-in; this starts
+	 fast and ends slow */
+	 /* animation-timing-function: ease-in-out;this is basically
+	 the default */
+	 /* animation-fill-mode: forwards; so this helps 
+	 to keep the last shape without resetting */
+	 /* animation-fill-mode: both; */
+
+
+
+}
+
+/*@keyframes anime{
+	0%{background:red;left:0px;top:0px;border-radius:0;}
+	25%{background:green;left:300px;top:0px;border-radius:50% 0 0 0;}
+	50%{background: yellow;left:300px;top:300px;border-radius:50% 50% 0 0;}
+	75%{background: blue;left:0px;top:300px;border-radius:50% 50% 50% 0;}
+	100%{background:red;left:0px;top:0px;border-radius:50% 50% 50% 50%;}
+}*/
+@keyframes anime{
+	0%{background:red;border-radius:0;}
+	25%{background:green;border-radius:50% 0 0 0;}
+	50%{background: yellow;border-radius:50% 50% 0 0;}
+	75%{background: blue;border-radius:50% 50% 50% 0;}
+	100%{background:red;border-radius:50% 50% 50% 50%;}
+}
